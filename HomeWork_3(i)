@@ -1,0 +1,15 @@
+def bunnies(i):
+	if(i==0):
+			return i
+	else:
+		if(i%2==0):
+			print("bunny ",i," has 3 ears")
+			print()
+			bunnies(i-1)
+		else:
+			print("bunny ",i," has 2 ears")
+			bunnies(i-1)
+b = input("Enter the number of bunnies:")
+print("Entered " +b+ " bunnies....!!")
+print("Ears of each bunny are as below...!!")
+bunnies(int(b))
