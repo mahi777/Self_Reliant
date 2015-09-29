@@ -1,0 +1,6 @@
+def count_frequency(mylist):
+	f = {x:mylist.count(x) for x in mylist}
+	return f
+
+mylist=["one", "two","eleven",  "one", "three", "two", "eleven", "three", "seven", "eleven"]
+print(count_frequency(mylist))
