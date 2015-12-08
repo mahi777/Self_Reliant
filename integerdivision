@@ -1,0 +1,14 @@
+import random
+print("*****INTEGER DIVISIONS*****")
+a = random.randrange(0,10,2)
+b = random.randrange(1,4,2)
+
+while(1):
+	try:
+		c = input(str(a)+"/"+str(b)+":")
+	except ValueError:
+		print("Enter numeric values only..!")
+	if(c == (a/b)):
+		print("CORRECT...!!")
+	else:
+		print("INCORRECT...!!")
