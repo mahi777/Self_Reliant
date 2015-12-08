@@ -1,0 +1,63 @@
+def convrt_num_to_str(arg):
+
+    switch = 
+	{
+        0: "zero",
+        1: "one",
+        2: "two",
+    }
+
+def zero():
+    print ("I have exceptional memory")
+    answer = input("Who am I?")
+    print ("I am the largest land-living mammal in the world")
+    answer = input("Who am I?")
+    return "answer"
+
+def one():
+    print ("I am the biggest cat")
+    answer = input("Who am I?")
+    print ("I come in black and white or orange and black")
+    answer = input("Who am I?")
+    return "one"
+
+def two():
+    print ("I use echo-location")
+    answer = input("Who am I?")
+    print ("I can fly")
+    answer = input("Who am I?")
+    print ("I see well in dark")
+    answer = input("Who am I?")
+    return "two"
+    
+def convrt_num_to_func_to_str(arg):
+    switch = {
+        0: zero,
+        1: one,
+        2: lambda: "two",
+    }
+    
+
+print ("Let's play a game!")
+print ("I will give you 3 hints, guess what animal I am")
+
+func = switch.get(arg, lambda: "nothing")
+return func()
+
+class Switch(object):
+    def numb_to_methods_to_strings(self, arg):
+
+        method_name = 'number_' + str(arg)
+
+        method = getattr(self, method_name, lambda: "nothing")
+
+        return method()
+
+    def number_0(self):
+        return "zero"
+
+    def number_1(self):
+        return "one"
+
+    def number_2(self):
+        return "two"
